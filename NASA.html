@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>EduSpace | NASA</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="icon" href="Images\ES.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/solarSystem.css">
+
+
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
+
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">EduSpace</a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small">NASA</a>
+    <a href="#menu" class="w3-bar-item w3-button w3-padding-large w3-hide-small">THE MENU</a> 
+    </div>
+</div>
+
+
+
+
+
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="Images\4k-wallpaper-android-wallpaper-astro-astrology-1146134.jpg" style="width:100%">
+    <div class="w3-display-middle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h1>EduSpace</h1>
+      <p><b>Where learning meets technology</b></p>   
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="Images\flight-sky-earth-space-2166.jpg" style="width:100%">
+    <div class="w3-display-middle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h1>Changing the traditional way of learning!!!</h1>
+      <p><b></b></p>    
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="Images\photography-of-night-sky-733475.jpg" style="width:100%">
+    <div class="w3-display-middle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h1>Thank you, for being a part of our vision</h1>
+      <p><b></b></p>    
+    </div>
+  </div>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE NASA</span></h5>
+    <p>The National Aeronautics and Space Administration (NASA,/ˈnæsə/) is an independent agency of the United States Federal Government liable for the non military personnel space program, just as air transportation and aviation research.
+
+NASA was set up in 1958, succeeding the National Advisory Committee for Aeronautics (NACA). The new agency was to have an unmistakably non military personnel direction, empowering tranquil applications in space science. Since its foundation, most US space investigation endeavors have been driven by NASA, including the Apollo Moon landing missions, the Skylab space station, and later the Space Shuttle. NASA is supporting the International Space Station and is supervising the improvement of the Orion Multi-Purpose Crew Vehicle, the Space Launch System and Commercial Crew vehicles. The agency is likewise answerable for the Launch Services Program which gives oversight of dispatch activities and commencement the executives for uncrewed NASA dispatches. 
+
+NASA science is centered around better understanding Earth through the Earth Observing System; progressing heliophysics through the endeavors of the Science Mission Directorate's Heliophysics Research Program; investigating bodies all through the Solar System with cutting edge mechanical shuttle missions, for example, New Horizons; and inquiring about astronomy themes, for example, the Big Bang, through the Great Observatories and related programs.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"There's a silly notion that failure's not an option at NASA. Failure is an option here. If things are not failing, you are not innovating enough."
+
+</i></p>
+      <p>Elon Musk</p>
+    </div>
+    <img src="Images\nasa.png" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>Opening hours:</strong> everyday from 6am to 5pm.</p>
+    <p><strong>Address:</strong> 15 Adr street, 5015, NY</p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE MENU</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Missions</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Spacecrafts</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Mercury program</h5>
+      <p class="w3-text-grey">First U.S. crewed program </p><br>
+    
+      <h5>Gemini program</h5>
+      <p class="w3-text-grey">Program used to practice space rendezvous and EVAs</p><br>
+    
+      <h5>Apollo program</h5>
+      <p class="w3-text-grey">Brought first human to the Moon </p><br>
+    
+      <h5>Skylab</h5>
+      <p class="w3-text-grey">The crewed missions only took place in 1973 and 1974; first American space station </p><br>
+    
+      <h5>Apollo–Soyuz Test Project</h5>
+      <p class="w3-text-grey">Joint with Soviet Union</p><br>
+      
+      <h5>Space Shuttle</h5>
+      <p class="w3-text-grey">First missions in which a spacecraft was reused </p><br>
+
+      <h5>Shuttle-Mir Program</h5>
+      <p class="w3-text-grey">Russian partnership </p><br>
+
+      <h5>International Space Station</h5>
+      <p class="w3-text-grey">Joint with Roscosmos, CSA, ESA, and JAXA along with co-operators ASI and AEB</p><br>
+
+      <h5>Project Constellation</h5>
+      <p class="w3-text-grey">Cancelled program to bring humans to the Moon again, to Mars and beyond</p><br>
+
+      <h5>Artemis program</h5>
+      <p class="w3-text-grey">Current program to bring humans to the Moon again </p><br>
+	
+    </div>
+
+    
+  </div>
+</div>
+
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="index.html" title="EduSpace" target="_blank" class="w3-hover-text-green">EduSpace</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>

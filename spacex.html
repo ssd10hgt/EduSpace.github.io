@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>EduSpace | SpaceX</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="icon" href="Images\ES.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/solarSystem.css">
+
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+
+<body>
+
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">EduSpace</a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SpaceX</a>
+    <a href="#menu" class="w3-bar-item w3-button w3-padding-large w3-hide-small">THE MENU</a>
+  </div>
+</div>
+
+
+
+
+
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="Images\grey-and-orange-spaceship-700015.jpg" style="width:100%">
+    <div class="w3-display-middle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h1>SapceX</h1>
+      <p><b>Designs, manufactures and launches advanced rockets and spacecraft</b></p>   
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="Images\electric-lamp-over-black-background-256152.jpg" style="width:100%">
+    <div class="w3-display-middle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h1>Our vision is to harness space technology for national development, while pursuing space science research and planetary exploration.</h1>
+      <p><b></b></p>    
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="Images\photography-of-night-sky-733475.jpg" class="w3-image" width="100%" height="1000">
+    <div class="w3-display-middle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h1>Thank you, for being a part of our vision</h1>
+      <p><b></b></p>    
+    </div>
+  </div>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE SpaceX</span></h5>
+<p><p>SpaceX designs, fabricates and launches advanced rockets and shuttle. The organization was established in 2002 to reform space innovation, with a definitive objective of empowering individuals to live on different planets.
+As one of the world's quickest developing providers of launch services, SpaceX has made sure about more than 100 missions to its show, speaking to over $12 billion on contract. These incorporate business satellite dispatches just as US government missions. SpaceX's Dragon shuttle is flying various freight resupply missions to the space station under a progression of Commercial Resupply Services contracts. Mythical serpent was structured from the start to convey people to space and will before long fly space explorers under NASA's Commercial Crew Program. 
+
+Expanding on the accomplishments of Falcon 9 and Falcon Heavy, SpaceX is taking a shot at an up and coming age of completely reusable dispatch vehicles that will be the most remarkable at any point manufactured, equipped for conveying people to Mars and different goals in the close planetary system.
+
+SpaceX effectively accomplished the memorable first reflight of an orbital class rocket in 2017, and the organization currently routinely dispatches flight-demonstrated rockets. In 2018, SpaceX started propelling Falcon Heavy, the world's most impressive operational rocket by a factor of two
+ </p><div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>" The first step is to establish that something is possible; then probability will occur."
+
+</i></p>
+      <p>- Elon Musk </p>
+    </div>
+    <img src="Images\spacex.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong></strong> </p>
+    <p><strong></strong></p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE MENU</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Missions</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Spacecrafts</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+      <h5>First flight of Falcon 9</h5>
+      <p class="w3-text-grey">On 4 June 2010, the first Falcon 9 launch effectively put a test payload into the expected orbit. Starting right now of liftoff, the sponsor experienced roll. The roll halted before the art arrived at the highest point of the pinnacle, yet the subsequent stage started to move close to the finish of its burn, tumbling crazy during the passivation procedure and making a vaporous radiance of vented force that could be seen from all of Eastern Australia, raising UFO concerns.</p><br>
+    
+      <h5>CRS-1</h5>
+      <p class="w3-text-grey">The first operational cargo resupply mission to ISS, the fourth trip of Falcon 9, was propelled on October 7, 2012. At 76 seconds after liftoff, motor 1 of the principal arrange endured lost weight which caused a programmed shutdown of that motor. The staying eight first-organize motors kept on consuming and the Dragon container arrived at circle effectively. This was the principal exhibit of the rocket's "motor out" capacity in flight </p><br>
+    
+      <h5>Zuma</h5>
+      <p class="w3-text-grey">Zuma was a classified US government satellite and was developed and built by Northrop Grumman at an estimated cost of $3.5 billion.[632] Its launch, originally planned for mid-November 2017, was postponed to January 2018 as fairing tests for another SpaceX customer were assessed.  </p><br>
+    
+      <h5>Falcon Heavy test flight</h5>
+      <p class="w3-text-grey">The maiden launch of the Falcon Heavy occurred on February 6, 2018, marking the launch of the most powerful rocket since the Space Shuttle, with a theoretical payload capacity to low Earth orbit more than double the Delta IV Heavy.[634][635] Both side boosters landed nearly simultaneously after a ten-minute flight. The central core failed to land on a floating platform at sea.[259] The rocket carried a car and a mannequin to an eccentric heliocentric orbit that reaches further than aphelion of Mars.[636]</p><br>
+    
+      <h5>First flight of Crew Dragon</h5>
+      <p class="w3-text-grey">On March 2, 2019, SpaceX launched its first orbital flight of Dragon 2 (Crew Dragon). It was an uncrewed mission to the International Space Station. The Dragon contained a mannequin named Ripley which was equipped with multiple sensors to gather data about how a human would feel during the flight. Along with the mannequin was 300 pounds of cargo of food and other supplies.[637] Also on board was Earth plush toy referred to as a 'Super high tech zero-g indicator'.
+	
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Falcon 9</h5>
+      <p class="w3-text-grey">Falcon 9 is a two-stage rocket designed and manufactured by SpaceX for the reliable and safe transport of satellites and the Dragon spacecraft into orbit. Falcon 9 is the first orbital class rocket capable of reflight.</p><br>
+    
+      <h5>Falcon Heavy</h5>
+      <p class="w3-text-grey">Falcon Heavy is the most powerful operational rocket in the world by a factor of two. With the ability to lift into orbit nearly 64 metric tons (141,000 lb)---a mass greater than a 737 jetliner loaded with passengers, crew, luggage and fuel--Falcon Heavy can lift more than twice the payload of the next closest operational vehicle, the Delta IV Heavy, at one-third the cost. Falcon Heavy draws upon the proven heritage and reliability of Falcon 9.</p><br>
+    
+      <h5>Dragon</h5>
+      <p class="w3-text-grey">Dragon is a free-flying spacecraft designed to deliver both cargo and people to orbiting destinations. It is the only spacecraft currently flying that is capable of returning significant amounts of cargo to Earth. Currently Dragon carries cargo to space, but it was designed from the beginning to carry humans. The first demonstration flight under NASA's </p><br>
+    
+      <h5>STARSHIP</h5>
+      <p class="w3-text-grey">SpaceX's Starship spacecraft and Super Heavy rocket (collectively referred to as Starship) represent a fully reusable transportation system designed to carry both crew and cargo to Earth orbit, the Moon, Mars and beyond. Starship will be the world's most powerful launch vehicle </p><br>
+    
+    </div>  
+    <img src="Images\space-research-science-astronaut-41162.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide"></span></h5>
+    <p></p>
+    <img src="Images\milky-way.jpg" class="w3-image" style="width:100%">
+    
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="index.html" title="EduSpace" target="_blank" class="w3-hover-text-green">EduSpace</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
